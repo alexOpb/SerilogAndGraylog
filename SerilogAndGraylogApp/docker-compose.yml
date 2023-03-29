@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  graylog:
+    image: graylog/graylog:5.0.5
+    environment:
+      - GRAYLOG_HTTP_EXTERNAL_URI=http://127.0.0.1:9000/
+      - GRAYLOG_PASSWORD_SECRET=sample_password_secret
+      - GRAYLOG_ROOT_PASSWORD_SHA2=9A900403AC313BA27A1BC81F0932652B8020DAC92C234D98FA0B06BF0040ECFD
+    ports:
+      - 9000:9000
+      - 12201:12201/udp
+  mongo:
+    image: mongo:6.0
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch-oss:7.10.2
+    environment:
+      - http.host=0.0.0.0
+      - transport.host=localhost
+      - network.host=0.0.0.0
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    deploy:
+      resources:
+        limits:
+          memory: 1g
