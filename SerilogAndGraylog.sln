@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerilogAndGraylogApp", "SerilogAndGraylogApp\SerilogAndGraylogApp.csproj", "{2DF4E175-C22A-4BAF-9D34-AB2DE116E572}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2DF4E175-C22A-4BAF-9D34-AB2DE116E572}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DF4E175-C22A-4BAF-9D34-AB2DE116E572}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DF4E175-C22A-4BAF-9D34-AB2DE116E572}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DF4E175-C22A-4BAF-9D34-AB2DE116E572}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
