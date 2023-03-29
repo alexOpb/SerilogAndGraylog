@@ -1,5 +1,6 @@
 # Serilog & Graylog Integration
 
+To run:
 1. Open terminal in solution folder.
 2. Run `docker-compose up -d` to start Graylog.
 3. Configure Graylog:
